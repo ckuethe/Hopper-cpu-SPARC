@@ -1,0 +1,9 @@
+[submodule "HopperSDK"]
+	path = HopperSDK
+	url = https://github.com/0xc010d/HopperSDK
+[submodule "capstone"]
+	path = Capstone
+	url = https://github.com/aquynh/capstone
+[submodule "Capstone"]
+	path = Capstone
+	url = https://github.com/aquynh/capstone/
