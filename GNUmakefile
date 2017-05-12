@@ -6,6 +6,9 @@ SPARCCPU_OBJC_FILES = \
 	SPARCCPU/SPARCCtx.m
 
 #NOWARN=-Wno-format -Wno-return-type -Wno-unused-value -Wno-unused-variable -Wno-self-assign
-SPARCCPU_OBJCFLAGS=-I./HopperSDK/include -I./Capstone/include/ -DLINUX -fblocks -fobjc-nonfragile-abi $(NOWARN)
+SPARCCPU_OBJCFLAGS=$(NOWARN) \
+	-I${HOME}/GNUstep/Library/ApplicationSupport/Hopper/HopperSDK/include \
+	-I./Capstone/include/ \
+	-DLINUX
 
 include $(GNUSTEP_MAKEFILES)/bundle.make
